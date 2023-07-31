@@ -1,23 +1,5 @@
 #include <iostream>
 
-/**
- * CLASS METHOD SumTwoNumbers...
- * Given an integer x, return true if x is a palindrome, and false otherwise.
- *
- * Example:
- * Input: x = 121
- * Output: true
- *
- * Input: x = -121
- * Output: false
- *
- * Solution:
- * Good idea would be reverting the number itself, and then compare the number
- * with original number, if they are the same, then the number is a palindrome.
- * To avoid the overflow issue of the reverted number, what if we only revert
- * half of the int\text{int}int number?
- */
-
 bool Palindrome(int number) {
     // we can return false for all negative numbers..
     if (number < 0 || (number != 0 && number%10 == 0))
