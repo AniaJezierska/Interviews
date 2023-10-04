@@ -1,4 +1,4 @@
-class Solution {
+class RemoveDuplicate {
 public:
     int removeDuplicate(vector<int>& nums) {
         int n = nums.size();
