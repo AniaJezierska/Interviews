@@ -1,15 +1,18 @@
 public class RemoveElement {
-    //Approach 1: Two Pointers
+    //Approach: Two Pointers
     public int removeElement(int[] nums, int val) {
-        int writer = 0;
+        int i = 0;
         int n = nums.length;
-
-        for (int reader = 0; reader < n; reader++) {
-            if (nums[reader] != val) {
-                nums[writer++] = nums[reader];
+        while (i < n) {
+            if (nums[i] == val) {
+                nums[i] = nums[n - 1];
+                // reduce array size by one
+                n--;
+            } else {
+                i++;
             }
         }
-        return writer;
+        return n;
     }
 
     public static void main(String[] args) {
@@ -32,26 +35,3 @@ public class RemoveElement {
 
 //Space complexity: O(1)
 //the space complexity is independent of the size of the input array
-
-
-
-
-/* Approach 2: Two Pointers - when elements to remove are rare
-public int removeElement(int[] nums, int val) {
-    int i = 0;
-    int n = nums.length;
-    while (i < n) {
-        if (nums[i] == val) {
-            nums[i] = nums[n - 1];
-            // reduce array size by one
-            n--;
-        } else {
-            i++;
-        }
-    }
-    return n;
-}
-
-//Time complexity: O(n)
-//Space complexity: O(1)
-*/
