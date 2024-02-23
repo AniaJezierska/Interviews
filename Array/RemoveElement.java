@@ -26,6 +26,16 @@ public class RemoveElement {
     }
 }
 
+//Time complexity: O(n)
+//where n is the number of elements in the array nums.
+//This is because the algorithm iterates through the array once.
+
+//Space complexity: O(1)
+//the space complexity is independent of the size of the input array
+
+
+
+
 /* Approach 2: Two Pointers - when elements to remove are rare
 public int removeElement(int[] nums, int val) {
     int i = 0;
@@ -41,4 +51,7 @@ public int removeElement(int[] nums, int val) {
     }
     return n;
 }
- */
+
+//Time complexity: O(n)
+//Space complexity: O(1)
+*/
