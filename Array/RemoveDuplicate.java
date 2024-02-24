@@ -37,3 +37,11 @@ public class RemoveDuplicate {
         System.out.println();
     }
 }
+
+//Time complexity: O(n)
+//this is because the algorithm iterates through the array once with a single loop
+
+//Space complexity: O(1)
+//this is because the space usage of the algorithm does not increase with the size 
+//of the input array. The algorithm only uses a constant number of extra variables 
+//(n, insertIndex, i), regardless of the size of the input array.
