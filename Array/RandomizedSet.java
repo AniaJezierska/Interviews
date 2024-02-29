@@ -76,3 +76,19 @@ class RandomizedSet {
         System.out.println(param_7); // 2
     }
 }
+
+//Time complexity:
+//Insert Operation (insert(int val)):
+//Average case time complexity: O(1)
+//Worst case time complexity (due to potential resizing of ArrayList): O(n), 
+//but this is rare and amortized over multiple insertions.
+//Remove Operation (remove(int val)):
+//Average case time complexity: O(1)
+//Worst case time complexity (due to potential resizing of ArrayList): O(n), 
+//but this is rare and amortized over multiple removals.
+//Get Random Operation (getRandom()):
+//Average case time complexity: O(1)
+
+//Space complexity: O(n) where n is the number of elements stored in the set
+//we are storing each element in both a HashMap (map) and an ArrayList (list),
+//both of which could potentially hold all the elements
