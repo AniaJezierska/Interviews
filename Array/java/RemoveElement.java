@@ -13,6 +13,18 @@ public class RemoveElement {
             }
         }
         return n;
+
+    /* 
+        int writer = 0;
+        int n = nums.length;
+
+        for (int reader = 0; reader < n; reader++) {
+            if (nums[reader] != val) {
+                nums[writer++] = nums[reader];
+            }
+        }
+        return writer;
+    */
     }
 
     public static void main(String[] args) {
